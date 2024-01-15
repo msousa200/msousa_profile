@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Miguel Sousa Portfolio</title>
+        <link rel="stylesheet" href="style.css" /> 
+        <link rel="stylesheet" href="mediaqueries.css" />
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo"> <img src="img/Ellipse 16.png" alt="Miguel"></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#profile">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#habilities">Habilidades</a></li>
+                    <li><a href="#Portfólio">Portfólio</a></li> 
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo"><img src="img/Ellipse 16.png" alt=""></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="togglemenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#profile" onclick="togglemenu()">Início</a></li>
+                    <li><a href="#about" onclick="togglemenu()">Sobre</a></li>
+                    <li><a href="#habilities" onclick="togglemenu()">Habilidades</a></li>
+                    <li><a href="#Portfólio" onclick="togglemenu()">Portfólio</a></li> 
+                    <li><a href="#Contacto" onclick="togglemenu()">Contacto</a></li>
+
+                </div>
+            </div>
+
+        </nav>
+        <section id="profile">
+            <div class="section__text">
+                <h1 class="title1">Olá, o meu nome é Miguel Sousa</h1>
+                <h2 class="title2">E eu sou um Frontend Developer</h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-1" 
+                        onclick="location.href='#about'">
+                        Ver mais 
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="img/icons8-instagram-64 2.png" alt="O meu Instagram"
+                    class="icon" 
+                    onclick="location.href='https://www.instagram.com/miguel_sousa29/'"
+                    />
+                    <img src="img/icons8-github-30 2.png" alt="O meu Github"
+                    class="icon"
+                    onclick="location.href='https://github.com/msousa200'"
+                    />
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="section__text"></div>
+            <h1 class="title4">Sobre</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="img/Ellipse 21.png" alt="Profile picture" class="about-pic"/>
+                </div>
+                <div class="about-details-container">
+                        <h2 class="title2">Quem sou eu?</h2>
+                        <div class="frase1">
+                            <p>Como Frontend Web Developer, dedico-me à criação do frontend de sites e aplicações web que impulsionam o sucesso do produto. Explore alguns dos meus projetos na secção de Portfólio para ter uma visão mais detalhada do meu trabalho.</p>
+                        </div>
+                        <div class="btn-container1">
+                            <button 
+                        class="btn btn-color-2" 
+                        onclick="window.open('./img/Miguel Sousa Curriculo.pdf')">
+                        Download CV
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div>
+              <a href="#habilities"><img src="img/Ellipse 39.png" alt="Arrow icon" class="icon arrow" /></a>
+            </div>
+            </div>
+        </section>
+        <section id="habilities"
+             class="habilities">
+                <div><h2 class="title4">Habilidades</h2>
+                <p class="description">Descubra as habilidades que possuo e que me capacitam a desenvolver soluções criativas e funcionais para atender às necessidades dos meus clientes. </p>
+                </div>
+                <ul>
+                    <div>
+                    <li class="habilities-section"
+                        class="image-container">
+                            <img src="img/Ellipse 40.png" alt="CSS"/>
+                        <h3 class="title1">CSS</h3>
+                        <div class="frases">   
+                        <p>A versatilidade do CSS oferece aos desenvolvedores a liberdade de criar layouts responsivos que se adaptam a diferentes dispositivos e tamanhos de tela. Seja para uma aplicação móvel ou uma experiência de desktop, o CSS permite que o design se ajuste harmoniosamente, garantindo uma consistência visual em todo o espectro de plataformas.
+                        </p>
+                        </div>
+                    </li>
+                    </div>
+                    <div>
+                    <li class="habilities-section"
+                        class="image-container">
+                            <img src="img/Ellipse 41.png" alt="HTML"/>
+                        <h3 class="title1">HTML</h3>
+                        <div class="frases">
+                        <p>Para além de ser composta por simples tags e elementos, o HTML representa a linguagem que possibilita a criação de documentos interativos, fornecendo um alicerce robusto para o desenvolvimento de páginas web. Cada tag desempenha o papel de um bloco de construção, esculpindo o conteúdo de maneira a torná-lo compreensível e acessível a usuários em todo o mundo.
+                        </p>
+                        </div>
+                    </li>
+                    </div>
+                    <div>
+                    <li class="habilities-section"
+                        class="image-container">
+                            <img src="img/Ellipse 42.png" alt="JS"/>
+                        <h3 class="title1">JS</h3>
+                        <div class="frases">
+                        <p>Além de ser uma linguagem de programação, o JavaScript representa a força propulsora por trás da interatividade nas páginas web. Desde a validação de formulários até a geração dinâmica de elementos em tempo real, o JavaScript potencializa minhas criações para responderem de maneira ágil e precisa às ações dos usuários, enriquecendo a experiência online com um toque envolvente e personalizado.
+                        </p>
+                        </div>
+                    </li>
+                    </div>
+                    <div>
+                    <li class="habilities-section"
+                        class="image-container">
+                            <img src="img/Ellipse 43.png" alt="Python"/>
+                        <h3 class="title1">Python</h3>
+                        <div class="frases">
+                        <p>A clareza da sintaxe e a legibilidade inerente ao Python são atributos distintivos que transformam a elaboração de código em um processo natural e agradável. Cada linha é meticulosamente concebida para ser compreensível, fomentando uma colaboração eficiente e simplificando a manutenção do código ao longo do tempo.
+                        </p>  
+                        </div>
+                    </li>
+                    </div>
+                </ul>
+                <div>
+                    <a href="#Portfólio"><img src="img/Ellipse 39.png" alt="Arrow icon" class="icon arrow" /></a>
+                  </div>
+        </section>
+        
+        <section id="Portfólio">
+            <div class="Portfólio"></div>
+            <h1 class="title4">Portfólio</h1>
+            <div class="section-container">
+                <div class="section__pic-containe">
+                    <img src="img/Rectangle 100.png" alt="Projeto 1" class="Portfólio-pics"/>
+                </div>
+                <div class="Portfólio-details-containeres">
+                        <h2 class="title6">Gestor de despesas pessoais</h2>
+                        <div class="frases">
+                            <p>Apresento a minha própria aplicação de gestão de despesas pessoais, uma ferramenta poderosa que o coloca no controle total das suas finanças. Desenvolvi esta aplicação através da minha experiência em programação para rastrear gastos e proporcionar uma visão clara e acessivel das suas finanças pessoais.</p>
+                        </div>
+                        <div class="btn-container1">
+                            <button 
+                        class="btns btn-color-2" 
+                        onclick="location.href='https://github.com/msousa200'">
+                        Ver repositório
+                            </button>
+                        </div>
+            <div class="section-container">
+                <div class="section__pic-containee">
+                    <img src="img/Rectangle 75.png" alt="Projeto 2"
+                    class="Portfólio-pics"
+                    />
+                </div>
+                <div class="Portfólio-details-containeres1">
+                        <h2 class="title2">ETIC eats</h2>
+                        <div class="frases">
+                            <p> Aqui partilho a minha app, ETIC eats, que consiste na entrega de alimentos ao domicílio desenvolvendo uma maior inovação a nível da gastronomia. Programei esta app no intuito de facilitar a aquisição de alimentos no momento desejado.
+                            </p>
+                        </div>
+                        <div class="btn-container1">
+                            <button 
+                        class="btns btn-color-2" 
+                        onclick="location.href='https://github.com/msousa200/PF-ETIC/tree/main/Portfolio/EticEats'">
+                        Ver repositório
+                            </button>
+                        </div>
+            </div>
+            <div>
+        <script src="script.js"></script>
+    </body>   
+</html>       
+    
+
+   
+       

@@ -1,0 +1,268 @@
+<div id="Início"  class="Home">
+            <h1 >Olá, o meu nome é  Miguel Sousa </h1>
+            <h2>E eu sou um Frontend Developer</h2>
+            <button>Ver mais -></button>
+        </div>
+        <div>
+            <ul>
+                <img src="img/icons8-whatsapp-64 2.png">
+                <img src="img/icons8-instagram-64 2.png">
+                <img src="img/icons8-github-30 2.png">
+                <img src="img/icons8-email-50 2.png">
+            </ul>
+        </div>
+    <section class="Sobre">
+        <h1 class="Titulo Sobre">Sobre</h1>
+        <div>
+            <img src="img/Ellipse 21.png">
+
+        </div>
+
+    </section>
+    
+</body>
+</html>
+
+
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="menu">
+                <a href="/"></a>
+                <a id="logo"><img src="img/Ellipse 16.png"></a>
+                <div class="botoes">
+                    <ul>
+                        <li><a class="Inicio" href="#Início">Início</a></li>
+                        <li><a class="Sobre" href="#Sobre">Sobre</a></li>
+                        <li><a class="Portfolio" href="#Portfólio">Portfólio</a></li> 
+                        <li><a class="Contacto" href="#Contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+                                                     Style cSS
+
+    *{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: white;
+}
+
+
+.a{
+    color: white;
+    text-decoration: block;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    height: 82px;
+    width: 82px;
+
+}
+.menu ul{
+    list-style: none;
+    box-align: center;
+    margin: auto;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.botoes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    height: 40px;
+    min-width: 200px;
+    align-items: center;
+    gap: 30px;
+
+}
+
+                                                Novo HTML 
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Miguel Sousa Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="menu_content max-width mb-0">
+                <a href="/">
+                    <img src="img/Ellipse 16.png"/>
+                </a>
+                <ul class="botoes">
+                    <li><a href="#Início">Início</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Habilidades">Habilidades</a></li>
+                    <li><a href="#Portfólio">Portfólio</a></li> 
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <div class="Inicio">
+            <h1>Olá, o meu nome é Miguel Sousa</h1>
+            <h2>E eu sou um Frontend Developer </h2>
+            <a href="#Sobre" class="btn btn-primary">Ver mais -></a>
+        </div>
+        <div class="header-right">
+            <div class="header-image">
+                <img src="img/Ellipse 21.png" alt="Miguel" class="Miguel">
+            </div>
+
+   
+                                            Novo CSS 
+
+
+.menu{
+    height: 93px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: black;
+    
+    
+}
+.menu .menu_content {
+    padding: 3rem 4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .menu_content .botoes li{
+    display: inline-block;
+}
+
+.menu .menu_content .botoes li:not(:last-of-type){
+    margin-right: 2rem;
+}
+
+.menu .menu_content .botoes a{
+    padding: 1rem;
+    display: inline-block;
+}
+
+.menu .menu_content .botoes a:hover{
+    color:azure
+}
+
+.Inicio{
+    height: 1080px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+                                                    Novo Header CSS 
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+}
+
+header .header-left{
+    max-width: 62rem;
+    flex: 1;
+}
+
+header .header-left p{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 50rem;
+}
+
+header .header-right .header-image{
+    position: relative;
+    line-height: 0;
+}
+
+header .header-right .header-image ::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    border-radius: 0.5rem;
+    z-index: -1;
+}
+
+.header-image{
+    
+}
+
+
+
+                                            Importante
+
+<div class="section__pic-container">
+                <img src="img/Ellipse 21.png" alt="Miguel">
+            </div>
+
+                                            download
+                    <button 
+                        class="btn btn-color-2" 
+                        onclick="window.open('./img/Miguel Sousa Curriculo.pdf')">
+                        Download CV
+                    </button>
+
+
+
